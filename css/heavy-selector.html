@@ -1,0 +1,40 @@
+<!--
+сложные конструкции:
+1-вложенные селекторы
+2-мультиклассы
+3-соседний селектор
+определяет стиль для элемента, вложенного в другой.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teg style</title>
+	<style type="text/css">
+		
+		div
+		{
+		color: blue;
+		font-size: 18px;
+		font-family: Comic sans MS;
+		background-color: aqua;
+		}
+		div div
+		{
+			color: blue;
+		}
+		div p
+		{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+<p>just paragraph</p>
+<div>
+	<p>содержание параграфа</p>
+	<div>
+		содержание вложенного текста
+	</div>
+</div>
+</body>
+</html>

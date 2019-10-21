@@ -1,0 +1,40 @@
+<!--
+	класс-особенный вид селектора,который можно пометить как 1, так  и
+	несколько элементов.
+	чтобы указать селектор-класс, в цсс необходимо исп. .имя класса
+	чтобы привязать к этому классу элемент, необходимо указать атрибут class="имя класса"-->
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>teg style</title>
+		<style type="text/css">
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+			
+			}
+			p
+			{
+				font-size: 36px;
+
+			}
+			div
+			{
+				background: aqua;
+			}
+			.class1
+			{
+				font-size: 20px;
+				color: blue
+			}
+		</style>
+	</head>
+	<body>
+	<!--селектор-класс доминирует над тегом p-->
+	<p class="class1"> просто параграф</p>
+	<p>just one more paragraph</p>
+	<!--селектор-класс доминирует над тегом div-->
+	<div class="class1">just one new paragraph</div>
+	</body>
+	</html> 
